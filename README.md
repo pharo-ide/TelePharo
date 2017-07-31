@@ -1,7 +1,5 @@
 # TelePharo
-Tools to manage and develop remote Pharo images.
-
-TelePharo includes:
+Complete toolset for remote development of Pharo images. It includes:
 
 - remote playground
 - remote browser
