@@ -1,0 +1,3 @@
+*TelePharo-Browser-Client
+asScriptResultStringInCalypso
+	^self remotePrintString

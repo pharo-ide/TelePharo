@@ -1,0 +1,4 @@
+compiler
+compilerClass
+
+	^SeamlessRemoteClassCompiler

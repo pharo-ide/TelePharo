@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GLMTextEditorRequest",
+	"category" : "TelePharo-Browser-Client",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"actionSelector",
+		"remoteContext"
+	],
+	"name" : "TlpScriptEditorRequest",
+	"type" : "normal"
+}

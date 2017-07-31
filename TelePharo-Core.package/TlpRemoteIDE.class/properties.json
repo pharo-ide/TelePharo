@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TelePharo-Core",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"connectingNetwork",
+		"tools",
+		"connectedSystems"
+	],
+	"name" : "TlpRemoteIDE",
+	"type" : "normal"
+}

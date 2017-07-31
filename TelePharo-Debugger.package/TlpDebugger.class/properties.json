@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TlpTool",
+	"category" : "TelePharo-Debugger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TlpDebugger",
+	"type" : "normal"
+}

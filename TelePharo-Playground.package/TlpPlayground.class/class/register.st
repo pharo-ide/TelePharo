@@ -1,0 +1,4 @@
+registration
+register
+
+	self shouldNotImplement 

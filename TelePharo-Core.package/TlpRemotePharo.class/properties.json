@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TelePharo-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"remotePeer",
+		"remoteUIManager",
+		"tools",
+		"remoteEnvironment"
+	],
+	"name" : "TlpRemotePharo",
+	"type" : "normal"
+}

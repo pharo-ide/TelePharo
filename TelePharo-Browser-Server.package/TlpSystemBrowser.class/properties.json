@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TlpTool",
+	"category" : "TelePharo-Browser-Server",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"navigationEnvironment",
+		"remoteEnvironment",
+		"systemScope"
+	],
+	"name" : "TlpSystemBrowser",
+	"type" : "normal"
+}

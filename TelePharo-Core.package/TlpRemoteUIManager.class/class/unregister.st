@@ -1,0 +1,4 @@
+registration
+unregister 
+	
+	UIManager uninstallRemoteUIManager

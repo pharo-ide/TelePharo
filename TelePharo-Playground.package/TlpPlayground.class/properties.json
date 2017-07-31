@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GTPlayground",
+	"category" : "TelePharo-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"remotePharo"
+	],
+	"name" : "TlpPlayground",
+	"type" : "normal"
+}
