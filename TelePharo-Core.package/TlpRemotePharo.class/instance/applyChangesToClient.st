@@ -5,4 +5,4 @@ applyChangesToClient
 	changes := self evaluate: [ 
 		EpMonitor current log entries collect: [:each | each content asTransferredByValue ]].
 	
-	changes asLocalObject do: #applyCodeChanges
+	changes asLocalObject do: #applyCodeChange
