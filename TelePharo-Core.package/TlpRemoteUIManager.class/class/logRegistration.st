@@ -1,0 +1,4 @@
+registration
+logRegistration
+
+	self registeredInstance logRegistration

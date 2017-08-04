@@ -1,5 +1,5 @@
 tools registration
-shouldBeInstalled
+shouldBeRegistered
 
 	UIManager default == self ifFalse: [ 
 		self error: 'RemoteUIManager not installed!' ]
