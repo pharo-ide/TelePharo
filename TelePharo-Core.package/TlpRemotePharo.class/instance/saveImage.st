@@ -2,4 +2,8 @@ requests
 saveImage
 
 	remotePeer evaluateAsync: [ 
-		[Smalltalk saveSession] forkAt: Processor activePriority + 1 ]
+		[ | isImageStartup |
+			isImageStartup := Smalltalk saveSession.
+			isImageStartup ifFalse: [ 'image is saved' logCr]
+		] forkAt: Processor activePriority + 1 
+	]
