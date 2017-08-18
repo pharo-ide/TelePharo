@@ -2,7 +2,7 @@ network configuration
 configureRemotePharoNetwork: aSeamlessNetwork
 
 	| calypsoPackages |
-	calypsoPackages := ClyEnvironmentPlugin withAllSubclasses collect: #package as: IdentitySet.
+	calypsoPackages := (RPackageOrganizer default packages select: [ :each | each name beginsWith: 'Calypso-' ]) asIdentitySet.
 	
 	aSeamlessNetwork
 		transferByDefaultStrategy: (Kind of: Class) & (Satisfying for: [:c | 
