@@ -55,6 +55,6 @@ remotePharo evaluateAsync: [ [1/0] fork ].
 remotePharo evaluate: [ 1 + 2 ] "==> 3".
 remotePharo evaluate: [ 0@0 corner: 2@3 ] "==> aSeamlessProxy on remote rectangle".
 ```
-For details on scripting look at [Seamless project](https://github.com/dionisiydk/Seamless) which is underlying communication layer of TelePharo.
+For details on scripting features look at [Seamless project](https://github.com/dionisiydk/Seamless) which is underlying communication layer of TelePharo.
 
 Some operations are not working remotely. For example #debugIt command and refactorings lead to errors. But in future they will be supported
