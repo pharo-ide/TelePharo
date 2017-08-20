@@ -24,7 +24,7 @@ Image can be saved with running server. Or you can use command line option to st
 ./pharo PharoServer.image remotePharo --startServerOnPort=40423
 ```
 ## Client connection
-On IDE image client side of project should be installed:
+On IDE image client part of project should be installed:
 ```Smalltalk
 Metacello new
   baseline: 'TelePharo';
