@@ -19,7 +19,7 @@ Then server should be started on port where client image can connect:
 ```Smalltalk
 TlpRemoteUIManager registerOnPort: 40423
 ```
-Image can be saved with running server. Or you can use command line option for this:
+Image can be saved with running server. Or you can use command line option to start image with server:
 ```bash
 ./pharo PharoServer.image remotePharo --startServerOnPort=40423
 ```
