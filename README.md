@@ -42,7 +42,7 @@ Any error on remote image will open debugger on client image with remote process
 Any browser request on remote image will open browser on client image with remote packages and classes.
 
 User requests from server are redirected to client. Any confirm or inform requests from remote image will be shown on client. For example author name request will be shown on client image where user can type own name remotely.
-
+## Tools
 With remotePharo instance you can open remote system browser, playground or process browser:
 ```Smalltalk
 remotePharo openPlayground.
@@ -58,3 +58,20 @@ remotePharo evaluate: [ 0@0 corner: 2@3 ] "==> aSeamlessProxy on remote rectangl
 For details on scripting features look at [Seamless project](https://github.com/dionisiydk/Seamless) which is underlying communication layer of TelePharo.
 
 Some operations are not working remotely. For example #debugIt command and refactorings lead to errors. But in future they will be supported
+
+# Saving changes
+Save remote Pharo image using:
+```Smalltalk
+remotePharo saveImage
+```
+Notice that it will save image with running server. And when you will restart Pharo next time the IDE server will be running.
+You can use command line option to stop the running server in that case:
+```bash
+./pharo PharoServer.image remotePharo --stopServer
+```
+In many cases save image is not enough. You want keep produced remote changes in your project.
+For this you will need import the remote code changes into your local environment:
+```Smalltalk
+remotePharo applyChangesToClient
+```
+And then commit them into code repository (using Iceberg for example).
