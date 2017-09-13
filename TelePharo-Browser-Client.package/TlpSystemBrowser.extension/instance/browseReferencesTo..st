@@ -3,7 +3,7 @@ browseReferencesTo: aSelector
 
 	| classBinding |
 	aSelector first isUppercase ifTrue: [ 
-		classBinding := self remoteEnvironment bindingOf: aSelector.
+		classBinding := self systemEnvironment bindingOf: aSelector.
 		classBinding ifNotNil: [ 
 			^self browseMethodsFromQuery: (ClyClassReferences of: {classBinding})]].
 		

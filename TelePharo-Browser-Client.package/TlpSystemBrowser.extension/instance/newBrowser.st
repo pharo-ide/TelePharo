@@ -2,6 +2,6 @@
 newBrowser
 
 	| browser |
-	browser := ClySystemBrowser on: self navigationEnvironment systemScope: self systemScope.
+	browser := ClyPackageBrowser on: self navigationEnvironment systemScope: self systemScope.
 	browser disableSlowPlugins.
 	^browser
