@@ -5,6 +5,6 @@ browseReferencesTo: aSelector
 	aSelector first isUppercase ifTrue: [ 
 		classBinding := self systemEnvironment bindingOf: aSelector.
 		classBinding ifNotNil: [ 
-			^self browseMethodsFromQuery: (ClyClassReferences of: {classBinding})]].
+			^self browseQueryResultOf: (ClyClassReferences of: {classBinding})]].
 		
 	self browseSendersOf: aSelector
