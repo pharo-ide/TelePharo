@@ -1,4 +1,4 @@
 *TelePharo-Browser-Client
 browseSendersOf: aSelector
 
-	self browseMethodsFromQuery: (ClyMessageSenders of: {aSelector})
+	self browseQueryResultOf: (ClyMessageSenders of: {aSelector})
