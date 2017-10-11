@@ -2,6 +2,7 @@
 prepareValueTransferBy: aSeamlessObjectTransporter
 
 	| objectClass |
+	aSeamlessObjectTransporter transfer: type byWellKnownObjectNamed: type name.
 	aSeamlessObjectTransporter transferByValue: properties.
 	"temporal solution to optimaze process/context items while we still using GTDebugger in remote scenario"
 	actualObject isSeamlessProxy ifTrue: [ ^self].
