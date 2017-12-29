@@ -1,4 +1,4 @@
 *TelePharo-Browser-Server
 prepareValueTransferBy: aSeamlessObjectTransporter
 
-	aSeamlessObjectTransporter transferByValue: variableQuery
+	aSeamlessObjectTransporter transferByValue: mergedParts 
