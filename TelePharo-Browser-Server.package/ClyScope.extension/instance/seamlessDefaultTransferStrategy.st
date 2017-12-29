@@ -1,5 +1,5 @@
 *TelePharo-Browser-Server
 seamlessDefaultTransferStrategy
-	^environment 
-		ifNil: [ SeamlessTransferStrategy defaultByValue]
-		ifNotNil: [ SeamlessTransferStrategy defaultByReference ]
+	^environment isSeamlessProxy 
+		ifTrue: [ SeamlessTransferStrategy defaultByValue]
+		ifFalse: [ SeamlessTransferStrategy defaultByReference ]
