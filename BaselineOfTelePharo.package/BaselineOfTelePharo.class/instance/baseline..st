@@ -3,7 +3,7 @@ baseline: spec
 	<baseline>
 	spec for: #'common' do: [
 		spec baseline: 'Seamless' with: [ 
-			spec repository: 'github://dionisiydk/Seamless:v0.9.x' ].
+			spec repository: 'github://dionisiydk/Seamless:dev' ].
 		spec project: 'SeamlessForServer' copyFrom: 'Seamless' with: [
 				spec loads: 'Core' ].
 		spec project: 'SeamlessForClient' copyFrom: 'Seamless' with: [
