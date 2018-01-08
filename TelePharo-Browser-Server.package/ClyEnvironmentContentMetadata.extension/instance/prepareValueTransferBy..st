@@ -1,4 +1,0 @@
-*TelePharo-Browser-Server
-prepareValueTransferBy: aSeamlessObjectTransporter
-
-	aSeamlessObjectTransporter transferByValue: properties

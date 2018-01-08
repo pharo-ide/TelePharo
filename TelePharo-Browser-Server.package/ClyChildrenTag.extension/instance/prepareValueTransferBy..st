@@ -1,5 +1,5 @@
 *TelePharo-Browser-Server
 prepareValueTransferBy: aSeamlessObjectTransporter
 	super prepareValueTransferBy: aSeamlessObjectTransporter.
-
-	aSeamlessObjectTransporter transferByValue: methods
+	
+	aSeamlessObjectTransporter transfer: childrenType byWellKnownObjectNamed: childrenType name 
