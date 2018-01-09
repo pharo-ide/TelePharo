@@ -1,6 +1,5 @@
 # TelePharo
 [![Build Status](https://travis-ci.org/dionisiydk/TelePharo.svg?branch=master)](https://travis-ci.org/dionisiydk/TelePharo)
-
 Complete toolset for remote development of Pharo images. It includes:
 
 - remote playground
