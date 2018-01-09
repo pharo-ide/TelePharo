@@ -26,6 +26,7 @@ Image can be saved with running server. Or you can use command line option to st
 ### Slow servers
 In case when your remote machine is slow you can disable slow plugins of browser. For example Raspberry machines 10x times slower then x86 and some code analysis can affect general performance of remote IDE. To optimize such scenarios evaluate following script on prepared server image:
 ```Smalltalk
+ClyNavigationEnvironment reset.
 ClySystemEnvironmentPlugin disableSlowPlugins
 ```
 ## Client connection
