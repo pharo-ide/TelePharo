@@ -3,13 +3,13 @@ baseline: spec
 	<baseline>
 	spec for: #'common' do: [
 		spec baseline: 'Seamless' with: [ 
-			spec repository: 'github://dionisiydk/Seamless:dev' ].
+			spec repository: 'github://dionisiydk/Seamless:v0.9.x' ].
 		spec project: 'SeamlessForServer' copyFrom: 'Seamless' with: [
 				spec loads: 'Core' ].
 		spec project: 'SeamlessForClient' copyFrom: 'Seamless' with: [
 				spec loads: 'default'	].
 		spec baseline: 'Calypso' with: [ 
-			spec repository: 'github://dionisiydk/Calypso:dev' ].
+			spec repository: 'github://dionisiydk/Calypso:v0.8.x' ].
 		spec project: 'CalypsoEnvironment' copyFrom: 'Calypso' with: [
 				spec loads: 'FullEnvironment' ].
 		spec project: 'CalypsoBrowser' copyFrom: 'Calypso' with: [
