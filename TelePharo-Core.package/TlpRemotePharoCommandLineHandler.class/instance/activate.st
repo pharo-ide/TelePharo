@@ -4,7 +4,14 @@ activate
 		ifTrue: [  ^ self ].
 	
 	(self hasOption: 'disableSlowPlugins')
-		ifTrue: [ ClySystemEnvironmentPlugin disableSlowPlugins].
+		ifTrue: [ 
+			ClyNavigationEnvironment reset.
+			ClySystemEnvironmentPlugin disableSlowPlugins].
+
+	(self hasOption: 'enableSlowPlugins')
+		ifTrue: [ 
+			ClyNavigationEnvironment reset.
+			ClySystemEnvironmentPlugin enableSlowPlugins].
 
 	(self hasOption: 'startServerOnPort')
 		ifTrue: [ TlpRemoteUIManager registerOnPort: (self optionAt: 'startServerOnPort') asNumber].
