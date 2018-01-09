@@ -29,6 +29,10 @@ In case when your remote machine is slow you can disable slow plugins of browser
 ClyNavigationEnvironment reset.
 ClySystemEnvironmentPlugin disableSlowPlugins
 ```
+Also you are able to disable slow plugins from command line using extra option #disableSlowPlugins:
+```bash
+./pharo PharoServer.image remotePharo --startServerOnPort=40423 --disableSlowPlugins
+```
 ## Client connection
 On IDE image client part of project should be installed:
 ```Smalltalk
