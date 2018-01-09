@@ -23,6 +23,11 @@ Image can be saved with running server. Or you can use command line option to st
 ```bash
 ./pharo PharoServer.image remotePharo --startServerOnPort=40423
 ```
+### Slow servers
+In case when you remote machine is slow you can disable slow plugins of browser. For example Raspberry machines 10x times slower then x86 and some code analysys which browser produces on server can affect general performance of remote IDE. To optimize such scenarios evaluate following script on prepared server image:
+```Smalltalk
+ClySystemEnvironmentPlugin disableSlowPlugins
+```
 ## Client connection
 On IDE image client part of project should be installed:
 ```Smalltalk
