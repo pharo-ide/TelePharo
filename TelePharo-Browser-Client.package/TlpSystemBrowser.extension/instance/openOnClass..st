@@ -1,8 +1,5 @@
 *TelePharo-Browser-Client
 openOnClass: aClass
 
-	| browser |
-	browser := self newBrowser.
-
-	browser selectClass: aClass.
-	browser open.
+	self spawnBrowser: ClyFullBrowser withState: [:browser |
+		browser selectClass: aClass]

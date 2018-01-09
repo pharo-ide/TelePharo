@@ -1,3 +1,4 @@
 accessing
 systemEnvironment
-	^self navigationEnvironment systemEnvironment
+	^systemEnvironment ifNil: [ 
+		systemEnvironment := self navigationEnvironment system]

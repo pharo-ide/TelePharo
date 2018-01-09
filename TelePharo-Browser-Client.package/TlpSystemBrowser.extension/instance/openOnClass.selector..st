@@ -1,10 +1,8 @@
 *TelePharo-Browser-Client
 openOnClass: aClass selector: aSymbol
 
-	| browser method |
+	| method |
 	method := aClass lookupSelector: aSymbol.
 
-	browser := self newBrowser.
-	browser selectMethod: method.
-	
-	^browser
+	^self spawnBrowser: ClyFullBrowser withState: [:browser |
+		browser selectMethod: method]

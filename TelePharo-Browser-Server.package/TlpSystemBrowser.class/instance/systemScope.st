@@ -1,4 +1,4 @@
 accessing
 systemScope
 	^systemScope ifNil: [ 
-		systemScope := ClySystemScope of: self systemEnvironment named: remoteSystem addressString]
+		systemScope := ClySystemEnvironmentScope of: self systemEnvironment in: self navigationEnvironment named: remoteSystem addressString]

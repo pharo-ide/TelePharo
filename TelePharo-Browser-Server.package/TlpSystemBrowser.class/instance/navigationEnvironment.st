@@ -1,4 +1,4 @@
 accessing
 navigationEnvironment
 	^navigationEnvironment ifNil: [ 
-		navigationEnvironment := remoteSystem evaluate: [ ClySystemNavigationEnvironment currentImage ] ]
+		navigationEnvironment := remoteSystem evaluate: [ ClyNavigationEnvironment currentImage ] ]

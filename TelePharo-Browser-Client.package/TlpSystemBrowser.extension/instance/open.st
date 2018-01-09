@@ -1,7 +1,4 @@
 *TelePharo-Browser-Client
 open
 
-	| browser |
-	browser := self newBrowser.
-
-	browser open
+	self spawnBrowser: ClyFullBrowser withState: [ ].
