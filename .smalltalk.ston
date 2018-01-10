@@ -5,4 +5,14 @@ SmalltalkCISpec {
       #platforms : [ #pharo ]
     }
   ]
+  #testing : {
+    #include : {
+      #projects : [ 
+        'BaselineOfTostSerializer', 
+        'BaselineOfReadWriteLock', 
+        'BaselineOfObjectTravel', 
+        'BaselineOfBasys' , 
+        'BaselineOfSeemless', 
+        'BaselineOfCalypso' ]
+    }
 }
