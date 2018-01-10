@@ -15,4 +15,5 @@ SmalltalkCISpec {
         'BaselineOfSeemless', 
         'BaselineOfCalypso' ]
     }
+  }
 }
