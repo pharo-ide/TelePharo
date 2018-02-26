@@ -1,0 +1,20 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'TelePharo',
+      #platforms : [ #pharo ],
+      #failOn : [ #Exception ]
+    }
+  ],
+  #testing : {
+    #include : {
+      #projects : [ 
+        'BaselineOfTostSerializer', 
+        'BaselineOfReadWriteLock', 
+        'BaselineOfObjectTravel', 
+        'BaselineOfBasys' , 
+        'BaselineOfSeemless', 
+        'BaselineOfCalypso' ]
+    }
+  }
+}
