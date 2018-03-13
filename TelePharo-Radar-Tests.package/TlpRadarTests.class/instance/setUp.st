@@ -4,8 +4,7 @@ setUp
 	
 	remoteUIManager := TlpRemoteUIManager new.
 	remoteUIManager startServerOn: 40423.
-	discoveryServer := TlpDiscoveryService for: remoteUIManager connectingServer.
-	discoveryServer start.
+	remoteUIManager enableNetworkDiscovery.
 	
 	ide := TlpRemoteIDE new.
-	radar := ide openRadar. 
+	radar := TlpRadar for: ide
