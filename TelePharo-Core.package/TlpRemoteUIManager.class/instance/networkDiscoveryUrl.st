@@ -1,4 +1,4 @@
 accessing
 networkDiscoveryUrl
 	
-	^'telepharo://', NetNameResolver localAddressString, ':', connectingServer port asString
+	^'telepharo://', NetNameResolver localHostName, ':', connectingServer port asString
