@@ -10,7 +10,7 @@
 	"instvars" : [
 		"connectingNetwork",
 		"tools",
-		"connectedSystems"
+		"connectedPharos"
 	],
 	"name" : "TlpRemoteIDE",
 	"type" : "normal"

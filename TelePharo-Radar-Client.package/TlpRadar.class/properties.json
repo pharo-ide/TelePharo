@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TelePharo-Radar-Client",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ide",
+		"detectedPharos",
+		"ssdpClient"
+	],
+	"name" : "TlpRadar",
+	"type" : "normal"
+}
