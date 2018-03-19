@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "TelePharo-Radar-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ide",
+		"radar",
+		"remoteUIManager",
+		"discoveryServer"
+	],
+	"name" : "TlpRadarTests",
+	"type" : "normal"
+}

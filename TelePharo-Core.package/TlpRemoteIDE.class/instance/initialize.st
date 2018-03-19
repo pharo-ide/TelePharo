@@ -2,7 +2,7 @@ initialization
 initialize
 	super initialize.
 	
-	connectedSystems := Dictionary new.
+	connectedPharos := Dictionary new.
 	tools := Dictionary new.
 	self setUpAvailableTools.
 	connectingNetwork := SeamlessNetwork new.
