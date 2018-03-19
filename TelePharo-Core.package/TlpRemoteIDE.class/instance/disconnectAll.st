@@ -1,7 +1,7 @@
 connecting
 disconnectAll
 
-	connectedSystems do: [ :each | each disconnect].
-	connectedSystems removeAll.
+	connectedPharos do: [ :each | each disconnect].
+	connectedPharos removeAll.
 		
 	connectingNetwork destroy
