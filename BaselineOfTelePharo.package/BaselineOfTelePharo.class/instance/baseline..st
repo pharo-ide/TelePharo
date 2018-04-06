@@ -9,7 +9,7 @@ baseline: spec
 		spec project: 'SeamlessForClient' copyFrom: 'Seamless' with: [
 				spec loads: 'default'	].
 		spec baseline: 'Calypso' with: [ 
-			spec repository: 'github://dionisiydk/Calypso:v0.10.x' ].
+			spec repository: 'github://dionisiydk/Calypso:v0.11.x' ].
 		spec project: 'CalypsoMinimalEnvironment' copyFrom: 'Calypso' with: [
 				spec loads: #('MinimalEnvironment' 'ProcessEnvironment') ].
 		spec project: 'CalypsoFullEnvironment' copyFrom: 'Calypso' with: [
@@ -26,7 +26,12 @@ baseline: spec
 		spec package: 'TelePharo-Browser-Server' with: [spec requires: #('CalypsoMinimalEnvironment' 'TelePharo-Core')].
 		spec package: 'TelePharo-Browser-Client' with: [spec requires: #('TelePharo-Browser-Server' 'CalypsoBrowser')].
 		spec package: 'TelePharo-Playground' with: [spec requires: #('TelePharo-Core')].
+		
+		spec package: 'SSDP' with: [ spec repository: 'http://smalltalkhub.com/mc/henriksp/SSDP/main/'].
+		spec package: 'TelePharo-Radar' with: [spec requires: #('TelePharo-Core' 'SSDP')].
+		spec package: 'TelePharo-Radar-Tests' with: [spec requires: #('TelePharo-Radar')].
+		
 		spec
 			group: 'MinimalServer' with: #('SeamlessForServer' 'TelePharo-Core' 'TelePharo-Browser-Server' 'TelePharo-Debugger' ); 
 			group: 'Server' with: #('MinimalServer' 'CalypsoFullEnvironment');
-			group: 'Client' with: #('SeamlessForClient' 'TelePharo-Core' 'TelePharo-Browser-Client' 'TelePharo-Debugger' 'TelePharo-Playground')].
+			group: 'Client' with: #('SeamlessForClient' 'TelePharo-Core' 'TelePharo-Browser-Client' 'TelePharo-Debugger' 'TelePharo-Playground' 'TelePharo-Radar' 'TelePharo-Radar-Tests')].
