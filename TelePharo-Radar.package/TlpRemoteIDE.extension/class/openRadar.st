@@ -1,4 +1,4 @@
-tools
+*TelePharo-Radar
 openRadar
 	<script>
 	
