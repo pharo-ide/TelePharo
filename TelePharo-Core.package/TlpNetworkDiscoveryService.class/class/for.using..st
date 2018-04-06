@@ -1,6 +1,6 @@
 instance creation
 for: aTCPServer using: aNetworkDiscoveryStrategy
 
-	self new 
+	^self new 
 		publicServer: aTCPServer;
 		strategy: aNetworkDiscoveryStrategy  
