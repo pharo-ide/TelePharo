@@ -1,3 +1,0 @@
-accessing
-ide
-	^ ide
