@@ -1,4 +1,6 @@
 controlling
 stop
 
-	ssdpServer shutDown
+	ssdpServer shutDown.
+	
+	self class unregisterService: self

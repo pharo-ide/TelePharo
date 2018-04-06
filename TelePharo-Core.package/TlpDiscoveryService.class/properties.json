@@ -4,7 +4,9 @@
 	"category" : "TelePharo-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"RunningServices"
+	],
 	"instvars" : [
 		"ssdpServer",
 		"strategy",
