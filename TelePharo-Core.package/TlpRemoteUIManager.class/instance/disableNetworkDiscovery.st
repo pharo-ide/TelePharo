@@ -1,4 +1,4 @@
 controlling
 disableNetworkDiscovery
 
-	discoveryServer ifNotNil: [ discoveryServer stop ]
+	discoveryService ifNotNil: [ discoveryService stop ]

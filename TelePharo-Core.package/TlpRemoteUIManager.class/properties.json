@@ -7,10 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"connectingServer",
-		"discoveryServer",
 		"localUIManager",
 		"localTools",
-		"remoteIDE"
+		"remoteIDE",
+		"discoveryService"
 	],
 	"name" : "TlpRemoteUIManager",
 	"type" : "normal"
