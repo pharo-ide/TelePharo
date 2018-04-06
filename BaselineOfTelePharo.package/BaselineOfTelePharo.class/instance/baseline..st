@@ -2,6 +2,7 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #'common' do: [
+		spec package: 'SSDP' with: [ spec repository: 'http://smalltalkhub.com/mc/henriksp/SSDP/main/'].
 		spec baseline: 'Seamless' with: [ 
 			spec repository: 'github://dionisiydk/Seamless:v0.9.x' ].
 		spec project: 'SeamlessForServer' copyFrom: 'Seamless' with: [
@@ -27,11 +28,10 @@ baseline: spec
 		spec package: 'TelePharo-Browser-Client' with: [spec requires: #('TelePharo-Browser-Server' 'CalypsoBrowser')].
 		spec package: 'TelePharo-Playground' with: [spec requires: #('TelePharo-Core')].
 		
-		spec package: 'SSDP' with: [ spec repository: 'http://smalltalkhub.com/mc/henriksp/SSDP/main/'].
 		spec package: 'TelePharo-Radar' with: [spec requires: #('TelePharo-Core' 'SSDP')].
 		spec package: 'TelePharo-Radar-Tests' with: [spec requires: #('TelePharo-Radar')].
 		
 		spec
-			group: 'MinimalServer' with: #('SeamlessForServer' 'TelePharo-Core' 'TelePharo-Browser-Server' 'TelePharo-Debugger' ); 
+			group: 'MinimalServer' with: #('SeamlessForServer' 'SSDP' 'TelePharo-Core' 'TelePharo-Browser-Server' 'TelePharo-Debugger' ); 
 			group: 'Server' with: #('MinimalServer' 'CalypsoFullEnvironment');
 			group: 'Client' with: #('SeamlessForClient' 'TelePharo-Core' 'TelePharo-Browser-Client' 'TelePharo-Debugger' 'TelePharo-Playground' 'TelePharo-Radar' 'TelePharo-Radar-Tests')].
