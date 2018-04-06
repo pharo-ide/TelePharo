@@ -1,0 +1,4 @@
+controlling
+isStarted
+
+	^ssdpServer notNil
