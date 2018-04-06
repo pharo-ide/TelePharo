@@ -1,0 +1,3 @@
+ip lookup
+lookupPublicIP
+	^ipAddress

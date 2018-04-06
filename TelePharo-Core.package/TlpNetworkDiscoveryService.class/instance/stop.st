@@ -1,0 +1,4 @@
+controlling
+stop
+
+	ssdpServer shutDown

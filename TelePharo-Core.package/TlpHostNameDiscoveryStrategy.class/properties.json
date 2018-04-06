@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TlpNetworkDiscoveryStrategy",
+	"category" : "TelePharo-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TlpHostNameDiscoveryStrategy",
+	"type" : "normal"
+}

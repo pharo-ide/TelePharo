@@ -1,9 +1,8 @@
 event processing
 newPharoAvailable: aSSDPService 
-	| location ipAddress newPharo |
+	| newPharo address |
 	('New Pharo detected: ', aSSDPService asString) logCr.
-	location := aSSDPService location asUrl.
-	[ipAddress := NetNameResolver addressForName: location host.
-	newPharo := ide registerPharoAt: (TCPAddress ip: ipAddress port: location port).
-	detectedPharos add: newPharo] 
-		on: NameLookupFailure do: [ :err | err logCr ]
+	
+	address := self lookupAddressOf: aSSDPService ifError: [:err | ^err logCr ].
+	newPharo := ide registerPharoAt: address.
+	detectedPharos add: newPharo

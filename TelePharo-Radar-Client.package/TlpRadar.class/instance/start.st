@@ -7,4 +7,4 @@ start
 		whenAvailable: [ :resource | 
 			self newPharoAvailable: resource]
 		whenUnavailable: [ :resource | 
-			self existingPharoUnavailable: resource].
+			self pharoWasShutdown: resource].

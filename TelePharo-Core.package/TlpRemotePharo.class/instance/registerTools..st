@@ -1,7 +1,7 @@
 tools registration
 registerTools: toolsDictionary
 	
-	tools := toolsDictionary collect: [ :toolClass | toolClass for: self  ].
+	self useTools: toolsDictionary.
 	
 	remoteUIManager 
 		registerRemoteTools: tools asTransferredByValue 

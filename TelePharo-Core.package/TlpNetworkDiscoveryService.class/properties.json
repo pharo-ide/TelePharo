@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TelePharo-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ssdpServer",
+		"strategy",
+		"publicServer"
+	],
+	"name" : "TlpNetworkDiscoveryService",
+	"type" : "normal"
+}
