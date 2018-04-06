@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TlpNetworkDiscoveryStrategy",
+	"super" : "TlpDiscoveryStrategy",
 	"category" : "TelePharo-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

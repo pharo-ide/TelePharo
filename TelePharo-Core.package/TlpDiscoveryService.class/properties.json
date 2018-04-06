@@ -10,6 +10,6 @@
 		"strategy",
 		"publicServer"
 	],
-	"name" : "TlpNetworkDiscoveryService",
+	"name" : "TlpDiscoveryService",
 	"type" : "normal"
 }

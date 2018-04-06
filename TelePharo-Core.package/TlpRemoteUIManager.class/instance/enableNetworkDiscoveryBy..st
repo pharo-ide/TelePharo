@@ -1,5 +1,5 @@
 controlling
-enableNetworkDiscoveryBy: aNetworkDiscoveryStrategy
+enableNetworkDiscoveryBy: aDiscoveryStrategy
 	
-	discoveryServer := TlpNetworkDiscoveryService for: connectingServer using: aNetworkDiscoveryStrategy.
+	discoveryServer := TlpDiscoveryService for: connectingServer using: aDiscoveryStrategy.
 	discoveryServer start

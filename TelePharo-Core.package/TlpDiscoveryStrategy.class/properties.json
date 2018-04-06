@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TlpNetworkDiscoveryStrategy",
+	"name" : "TlpDiscoveryStrategy",
 	"type" : "normal"
 }
