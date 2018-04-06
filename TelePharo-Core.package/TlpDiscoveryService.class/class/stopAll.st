@@ -2,5 +2,5 @@ registry
 stopAll
 	<script>
 	
-	self runningServices do: #stop
+	self runningServices copy do: #stop
 	
