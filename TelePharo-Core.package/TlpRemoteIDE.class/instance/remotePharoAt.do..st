@@ -1,4 +1,4 @@
 accessing
-remotePharoAt: aTCPAddress ifPresent: aBlock
+remotePharoAt: aTCPAddress do: aBlock
 	
 	connectedPharos at: aTCPAddress ifPresent: aBlock

@@ -1,4 +1,4 @@
 controlling
 stop
 
-	ssdpClient shutDown
+	ssdpClient ifNotNil: [ssdpClient shutDown]

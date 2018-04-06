@@ -1,13 +1,12 @@
 connecting
 connectTo: aTCPAddress 
 	
-	| remotePeer remotePharo |
-	connectedPharos at: aTCPAddress ifPresent: [:found | 
-		found isDisconnected ifFalse: [ ^found  ]].
+	| remotePharo |
+	remotePharo := self registerPharoAt: aTCPAddress ifExist: [ :existing |
+		existing isConnected ifTrue: [ ^existing ].
+		connectedPharos removeKey: aTCPAddress.
+		self registerPharoAt: aTCPAddress ifExist: [ :existing2 | 
+			self error: [ self error: 'Should not happen!' ] ]].
 	
-	remotePeer := connectingNetwork remotePeerAt: aTCPAddress.
-	remotePharo := TlpRemotePharo peer: remotePeer.
-	remotePharo registerTools: tools.
-	
-	connectedPharos at: aTCPAddress put: remotePharo.
+	remotePharo connect.
 	^remotePharo

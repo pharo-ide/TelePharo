@@ -5,4 +5,4 @@ pharoWasShutdown: aSSDPService
 	
 	address := self lookupAddressOf: aSSDPService ifError: [:err | ^err logCr ].
 	
-	ide remotePharoAt: address ifPresent: [ :pharo | detectedPharos remove: pharo ]
+	ide remotePharoAt: address do: [ :pharo | detectedPharos remove: pharo ]
