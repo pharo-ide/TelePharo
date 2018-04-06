@@ -1,4 +1,4 @@
 initialization
 initialize
 
-	SessionManager default registerNetworkClassNamed: TlpDiscoveryService name
+	SessionManager default registerUserClassNamed: TlpDiscoveryService name

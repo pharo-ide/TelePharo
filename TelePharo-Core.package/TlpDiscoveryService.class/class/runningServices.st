@@ -1,3 +1,3 @@
 registry
 runningServices
-	^RunningServices ifNil: [ RunningServices := OrderedCollection new ]
+	^RunningServices ifNil: [ RunningServices := IdentitySet new ]
