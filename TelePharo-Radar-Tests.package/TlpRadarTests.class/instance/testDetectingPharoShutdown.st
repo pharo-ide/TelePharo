@@ -3,7 +3,7 @@ testDetectingPharoShutdown
 	self testDetectingRemotePharo.
 	
 	remoteUIManager stopServer.
-	1 seconds wait.
+	[radar detectedPharos notEmpty] whileTrue: [100 milliSeconds wait].
 	
 	self assert: radar detectedPharos size equals: 0
 	
