@@ -1,6 +1,7 @@
 controlling
 publicUrl
-	| currentIP |
+	| currentIP ipString |
 	currentIP := strategy lookupPublicIP.
+	ipString := NetNameResolver stringFromAddress: currentIP.
 	
-	^'telepharo://', currentIP printString, ':', publicServer port asString
+	^'telepharo://', ipString, ':', publicServer port asString
