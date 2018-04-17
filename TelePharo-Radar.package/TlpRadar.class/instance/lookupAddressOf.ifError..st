@@ -7,4 +7,4 @@ lookupAddressOf: aSSDPService ifError: aBlock
 	ipAddress := NetNameResolver addressForName: location host.
 	
 	TCPAddress ip: ipAddress port: location port]
-		on: NameLookupFailure do: aBlock
+		on: Error do: aBlock
