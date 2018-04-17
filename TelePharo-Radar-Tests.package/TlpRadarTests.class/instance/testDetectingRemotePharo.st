@@ -2,7 +2,7 @@ tests
 testDetectingRemotePharo
 	radar start.
 	remoteUIManager enableNetworkDiscoveryBy: (
-		TlpStaticAddressDiscoveryStrategy ip: NetNameResolver localHostAddress).
+		TlpStaticAddressDiscoveryStrategy ip: (#[127 0 0 1] as: SocketAddress)).
 		
 	1 seconds wait.
 	
