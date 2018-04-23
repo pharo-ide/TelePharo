@@ -9,6 +9,7 @@ gtInspectorNetworkIn: composite
 		column: 'Connection' evaluated: [ :pharo | self gtConnectingStatusFor: pharo ] width: 100;
 		column: 'Debugger' evaluated: [ :pharo | self gtDebuggerStatusFor: pharo ] width: 100;
 		send: [ :each | each connect ];
+		act: [:table | self refresh] iconName: #refresh entitled: 'Clean and Refresh';
 		selectionAct: [:table | table selection openBrowser] 
 		iconName: #smallWindow entitled: 'Open Browser';
 		selectionAct: [:table | table selection openPlayground] 
