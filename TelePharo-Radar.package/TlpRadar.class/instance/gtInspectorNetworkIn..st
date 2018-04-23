@@ -6,5 +6,15 @@ gtInspectorNetworkIn: composite
 		display: [ detectedPharos ];
 		wantsAutomaticRefresh: true;
 		column: 'Remote Pharo Address' evaluated: [ :pharo | pharo displayString ];
-		column: 'Status' evaluated: [ :pharo | self gtConnectingButtonFor: pharo ] width: 20;
-		send: [ :each | each logCr ]
+		column: 'Connection' evaluated: [ :pharo | self gtConnectingStatusFor: pharo ] width: 100;
+		column: 'Debugger' evaluated: [ :pharo | self gtDebuggerStatusFor: pharo ] width: 100;
+		send: [ :each | each connect ];
+		selectionAct: [:table | table selection openBrowser] 
+		iconName: #smallWindow entitled: 'Open Browser';
+		selectionAct: [:table | table selection openPlayground] 
+		iconName: #workspace entitled: 'Open Playground';
+		selectionAct: [:table | table selection openProcessBrowser] 
+		iconName: #processBrowser entitled: 'Open ProcessBrowser';
+		selectionAct: [:table | table selection connectFullIDE. table update] 
+		iconName: #smallDebug entitled: 'Connect Debugger';
+		selectionAct: [:table | table selection disconnect. table update] entitled: 'Disconnect'

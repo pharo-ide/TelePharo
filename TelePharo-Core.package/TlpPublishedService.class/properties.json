@@ -1,17 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ClassAnnotation",
 	"category" : "TelePharo-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"remotePeer",
-		"remoteUIManager",
-		"tools",
-		"remoteEnvironment",
-		"registeredServices"
+		"name",
+		"instance"
 	],
-	"name" : "TlpRemotePharo",
+	"name" : "TlpPublishedService",
 	"type" : "normal"
 }

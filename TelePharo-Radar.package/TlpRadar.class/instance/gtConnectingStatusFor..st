@@ -1,5 +1,5 @@
 gt inspector
-gtConnectingButtonFor: aRemotePharo
+gtConnectingStatusFor: aRemotePharo
 
 	| iconName |
 	iconName := aRemotePharo isConnected ifTrue: [ #testGreenIcon ] ifFalse: [ #testRedIcon ].
