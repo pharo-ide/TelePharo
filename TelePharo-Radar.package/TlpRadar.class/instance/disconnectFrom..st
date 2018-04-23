@@ -1,0 +1,4 @@
+controlling
+disconnectFrom: aRemotePharo
+
+	aRemotePharo disconnectIDE

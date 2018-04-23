@@ -17,4 +17,4 @@ gtInspectorNetworkIn: composite
 		iconName: #processBrowser entitled: 'Open ProcessBrowser';
 		selectionAct: [:table | table selection connectFullIDE. table update] 
 		iconName: #smallDebug entitled: 'Connect Debugger';
-		selectionAct: [:table | table selection disconnect. table update] entitled: 'Disconnect'
+		selectionAct: [:table | self disconnectFrom: table selection. table update] entitled: 'Disconnect'
