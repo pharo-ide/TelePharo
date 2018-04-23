@@ -1,0 +1,3 @@
+accessing
+seamlessDefaultTransferStrategy
+	^SeamlessTransferStrategy defaultByValue
