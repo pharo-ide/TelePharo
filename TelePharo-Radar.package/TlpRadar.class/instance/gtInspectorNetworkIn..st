@@ -6,4 +6,5 @@ gtInspectorNetworkIn: composite
 		display: [ detectedPharos ];
 		wantsAutomaticRefresh: true;
 		column: 'Remote Pharo Address' evaluated: [ :pharo | pharo displayString ];
-		column: 'Status' evaluated: [ :pharo | self gtConnectingButtonFor: pharo ] width: 20
+		column: 'Status' evaluated: [ :pharo | self gtConnectingButtonFor: pharo ] width: 20;
+		send: [ :each | each logCr ]
