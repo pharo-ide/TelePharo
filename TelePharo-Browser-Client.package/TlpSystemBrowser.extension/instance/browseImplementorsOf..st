@@ -1,4 +1,4 @@
 *TelePharo-Browser-Client
 browseImplementorsOf: aSelector 
 
-	self spawnQueryBrowserOn: (ClyMessageImplementors of: aSelector)
+	self spawnQueryBrowserOn: (ClyMessageImplementorsQuery of: aSelector)

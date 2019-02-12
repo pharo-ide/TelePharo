@@ -9,7 +9,7 @@ baseline: spec
 		spec project: 'SeamlessForClient' copyFrom: 'Seamless' with: [
 				spec loads: 'default'	].
 		spec baseline: 'Calypso' with: [ 
-			spec repository: 'github://dionisiydk/Calypso:v0.11.x' ].
+			spec repository: 'github://dionisiydk/Calypso:v0.15.x' ].
 		spec project: 'CalypsoMinimalEnvironment' copyFrom: 'Calypso' with: [
 				spec loads: #('MinimalEnvironment' 'ProcessEnvironment') ].
 		spec project: 'CalypsoFullEnvironment' copyFrom: 'Calypso' with: [
