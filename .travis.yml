@@ -3,5 +3,5 @@ sudo: false
 os:
   - linux
 smalltalk:
-  - Pharo-6.0
+  - Pharo-6.1
   - Pharo-7.0
