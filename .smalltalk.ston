@@ -13,8 +13,7 @@ SmalltalkCISpec {
         'BaselineOfReadWriteLock', 
         'BaselineOfObjectTravel', 
         'BaselineOfBasys' , 
-        'BaselineOfSeemless', 
-        'BaselineOfCalypso' ]
+        'BaselineOfSeemless']
     }
   }
 }
