@@ -1,5 +1,5 @@
 # TelePharo
-[![Build Status](https://travis-ci.org/dionisiydk/TelePharo.svg?branch=master)](https://travis-ci.org/dionisiydk/TelePharo)
+[![Build Status](https://travis-ci.org/pharo-ide/TelePharo.svg?branch=master)](https://travis-ci.org/pharo-ide/TelePharo)
 
 Complete toolset for remote development of Pharo images. It includes:
 
@@ -14,7 +14,7 @@ Server part of project should be installed on target image:
 ```Smalltalk
 Metacello new
   baseline: 'TelePharo';
-  repository: 'github://dionisiydk/TelePharo';
+  repository: 'github://pharo-ide/TelePharo:pharo6';
   load: 'Server'.
 ```
 Then server should be started on port where client image can connect:
@@ -40,7 +40,7 @@ On IDE image client part of project should be installed:
 ```Smalltalk
 Metacello new
   baseline: 'TelePharo';
-  repository: 'github://dionisiydk/TelePharo';
+  repository: 'github://pharo-ide/TelePharo:pharo6';
   load: 'Client'.
 ```
 And then you can connect Pharo to remote image:
