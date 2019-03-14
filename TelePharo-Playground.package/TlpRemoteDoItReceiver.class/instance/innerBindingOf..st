@@ -1,0 +1,3 @@
+binding
+innerBindingOf: aString 
+	^nil

@@ -1,3 +1,3 @@
-as yet unclassified
+binding
 binding
 	^nil class binding
