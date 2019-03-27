@@ -1,5 +1,5 @@
 requests
-applyChangesToServer
+applyChangesFromClient
 	| changes |
 	changes := EpMonitor current log entries
 		collect: [ :each | each content asTransferredByValue ].
