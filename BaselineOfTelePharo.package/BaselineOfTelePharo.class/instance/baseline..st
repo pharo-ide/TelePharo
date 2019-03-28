@@ -3,7 +3,7 @@ baseline: spec
 	<baseline>
 	spec for: #'common' do: [
 		spec baseline: 'Seamless' with: [ 
-			spec repository: 'github://pharo-ide/Seamless:v0.9.15' ].
+			spec repository: 'github://pharo-ide/Seamless:v0.9.17' ].
 		spec project: 'SeamlessForServer' copyFrom: 'Seamless' with: [
 				spec loads: 'Core' ].
 		spec project: 'SeamlessForClient' copyFrom: 'Seamless' with: [
