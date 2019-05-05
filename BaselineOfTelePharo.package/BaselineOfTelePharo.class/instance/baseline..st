@@ -3,13 +3,13 @@ baseline: spec
 	<baseline>
 	spec for: #'common' do: [
 		spec baseline: 'Seamless' with: [ 
-			spec repository: 'github://pharo-ide/Seamless:v0.9.17' ].
+			spec repository: 'github://pharo-ide/Seamless:v0.9.18' ].
 		spec project: 'SeamlessForServer' copyFrom: 'Seamless' with: [
 				spec loads: 'Core' ].
 		spec project: 'SeamlessForClient' copyFrom: 'Seamless' with: [
 				spec loads: 'default'	].
 		spec baseline: 'Calypso' with: [ 
-			spec repository: 'github://pharo-ide/Calypso:v0.16.1/src' ].
+			spec repository: 'github://pharo-ide/Calypso:v0.16.3/src' ].
 		spec project: 'CalypsoMinimalEnvironment' copyFrom: 'Calypso' with: [
 				spec loads: #('MinimalEnvironment' 'ProcessEnvironment') ].
 		spec project: 'CalypsoFullEnvironment' copyFrom: 'Calypso' with: [
@@ -18,7 +18,7 @@ baseline: spec
 				spec loads: 'default'].				
 		spec baseline: 'StateSpecs' with: [
 				spec
-					repository: 'github://dionisiydk/StateSpecs:v2.4.10';
+					repository: 'github://dionisiydk/StateSpecs:v2.4.11';
 					loads: #('StateSpecs-Specs' 'StateSpecs-DSL-ClassWords') ].
 				
 		spec package: 'TelePharo-Core' with: [spec requires: #('StateSpecs')].
