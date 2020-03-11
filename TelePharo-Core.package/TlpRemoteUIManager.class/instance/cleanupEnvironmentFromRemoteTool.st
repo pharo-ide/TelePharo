@@ -5,5 +5,5 @@ cleanupEnvironmentFromRemoteTool
    select: [ :each | each subscriber isSeamlessProxy ]
    thenDo: [ :each | SystemAnnouncer uniqueInstance unsubscribe: each subscriber].
 
-	ClyNavigationEnvironment currentImage queryCache removeAll.
+	ClyNavigationEnvironment currentImage queryCache removeAll
 	
