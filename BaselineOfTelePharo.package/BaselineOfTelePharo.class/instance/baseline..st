@@ -5,7 +5,7 @@ baseline: spec
 		for: #common
 		do: [ spec
 				baseline: 'Seamless'
-				with: [ spec repository: 'github://pharo-ide/Seamless:v1.0.0' ].
+				with: [ spec repository: 'github://pharo-ide/Seamless:v2.0.1' ].
 			spec
 				project: 'SeamlessForServer'
 				copyFrom: 'Seamless'
@@ -17,14 +17,14 @@ baseline: spec
 			spec
 				baseline: 'StateSpecs'
 				with: [ spec
-						repository: 'github://dionisiydk/StateSpecs:v4.0.0';
+						repository: 'github://dionisiydk/StateSpecs:v4.0.2';
 						loads: #('StateSpecs-Specs' 'StateSpecs-DSL-ClassWords') ].
 			spec
 				for: #'pharo7.x'
 				do: [ "Dependencies for Pharo7, Calypso"
 					spec
 						baseline: 'Calypso'
-						with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.4/src' ].
+						with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 					spec
 						project: 'CalypsoMinimalEnvironment'
 						copyFrom: 'Calypso'
