@@ -4,12 +4,17 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec
-					baseline: 'Calypso'
-					with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
+				package: 'Calypso-SystemTools-Debugger'
+				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
-				project: 'CalypsoProcessBrowser'
-				copyFrom: 'Calypso'
-				with: [ spec loads: 'ProcessBrowser' ].
+				package: 'Calypso-ProcessQueries'
+				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
+			spec
+				package: 'Calypso-ProcessQueries-Tests'
+				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
+			spec
+				package: 'Calypso-SystemTools-ProcessBrowser'
+				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
 				baseline: 'Seamless'
 				with: [ spec repository: 'github://pharo-ide/Seamless:v2.0.1' ].
@@ -69,10 +74,13 @@ baseline: spec
 				package: 'TelePharo-Playground'
 				with: [ spec requires: #('TelePharo-Core') ].
 			spec
+				group: 'Calypso-ProcessBrowser' 
+					with:
+					#('Calypso-SystemTools-Debugger' 'Calypso-ProcessQueries' 'Calypso-ProcessQueries-Tests' 'Calypso-SystemTools-ProcessBrowser');
 				group: 'MinimalServer'
 					with:
-					#('SeamlessForServer' 'TelePharo-Core' 'TelePharo-Browser-Server' 'TelePharo-Debugger');
+					#('SeamlessForServer' 'TelePharo-Core' 'TelePharo-Browser-Server' 'TelePharo-Debugger' 'Calypso-ProcessBrowser');
 				group: 'Server' with: #('MinimalServer');
 				group: 'Client'
 					with:
-					#('SeamlessForClient' 'TelePharo-Core' 'TelePharo-Browser-Client' 'TelePharo-Debugger' 'TelePharo-Playground' 'CalypsoProcessBrowser') ].
+					#('SeamlessForClient' 'TelePharo-Core' 'TelePharo-Browser-Client' 'TelePharo-Debugger' 'TelePharo-Playground' 'Calypso-ProcessBrowser') ]
