@@ -17,7 +17,7 @@ baseline: spec
 				with: [ spec repository: 'github://pharo-ide/Calypso:v0.16.5/src' ].
 			spec
 				baseline: 'Seamless'
-				with: [ spec repository: 'github://pharo-ide/Seamless:v2.0.1' ].
+				with: [ spec repository: 'github://pharo-ide/Seamless:v2.0.2' ].
 			spec
 				project: 'SeamlessForServer'
 				copyFrom: 'Seamless'
