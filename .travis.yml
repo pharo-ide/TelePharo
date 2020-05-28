@@ -1,10 +1,12 @@
-language: smalltalk
-sudo: false
-os:
-  - linux
-smalltalk:
-  - Pharo-6.1
-  - Pharo-7.0
-  - Pharo64-7.0
-  - Pharo32-8.0
-  - Pharo64-8.0
+matrix:
+  include:
+    - language: smalltalk
+      sudo: false
+      os:
+        - linux
+      smalltalk:
+        - Pharo-6.1
+        - Pharo-7.0
+        - Pharo64-7.0
+        - Pharo32-8.0
+        - Pharo64-8.0
