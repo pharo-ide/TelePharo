@@ -37,7 +37,7 @@ matrix:
       script:
         -  bash PharoImageCreatorForGithubCi/imageCreate.sh
       after_success:
-        - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
+        - wget -c https://github.com/oliveiraallex/uploadtool/raw/master/upload.sh
         - bash upload.sh result/*
       branches:
         except:
