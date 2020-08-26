@@ -1,5 +1,5 @@
 controlling
 stopServer
 	self restoreLocalTools.
-	connectingServer network destroy.
-	connectingServer stop
+	connectingServer stop.
+	connectingServer network close

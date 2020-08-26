@@ -1,4 +1,4 @@
 controlling
 refreshConnection
 	
-	remotePeer establishNewConnection
+	remotePeer openNewConnection
