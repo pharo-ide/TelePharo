@@ -20,6 +20,14 @@ matrix:
       sudo: false
       os: linux
       smalltalk: Pharo64-8.0
+    - language: smalltalk
+      sudo: false
+      os: linux
+      smalltalk: Pharo32-9.0
+    - language: smalltalk
+      sudo: false
+      os: linux
+      smalltalk: Pharo64-9.0
 
     - language: c
       addons:
