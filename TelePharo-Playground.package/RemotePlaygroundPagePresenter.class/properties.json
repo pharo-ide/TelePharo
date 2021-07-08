@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StPlaygroundPagePresenter",
+	"category" : "TelePharo-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RemotePlaygroundPagePresenter",
+	"type" : "normal"
+}
