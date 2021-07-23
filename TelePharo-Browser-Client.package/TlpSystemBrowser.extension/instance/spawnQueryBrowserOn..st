@@ -1,5 +1,5 @@
 *TelePharo-Browser-Client
 spawnQueryBrowserOn: aQuery
 
-	^self spawnBrowser: ClyQueryBrowser withState: [ :b | 
+	^self spawnBrowser: ClyFullBrowserMorph withState: [ :b | 
 		b showResultOf: aQuery]

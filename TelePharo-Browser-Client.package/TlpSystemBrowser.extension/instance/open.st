@@ -1,4 +1,4 @@
 *TelePharo-Browser-Client
 open
 
-	self spawnBrowser: ClyFullBrowser withState: [ ].
+	self spawnBrowser: ClyFullBrowserMorph withState: [ ].
