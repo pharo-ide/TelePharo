@@ -1,4 +1,4 @@
 *TelePharo-Playground
 openPlayground
 
-	^TlpPlayground openFor: self
+	^TlpPlayground2 openFor: self

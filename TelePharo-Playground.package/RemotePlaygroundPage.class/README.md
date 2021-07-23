@@ -1,0 +1,1 @@
+Subclass that is aware of the remotePharo to hand it over to the RemotePlaygroundPagePresenter by overriding #defaultObjectInspectorClass

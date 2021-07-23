@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "MarcusDenker 7/8/2021 15:22",
+	"super" : "StPlayground",
+	"category" : "TelePharo-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"remotePharo"
+	],
+	"name" : "TlpPlayground2",
+	"type" : "normal"
+}
