@@ -4,5 +4,5 @@ openOnClass: aClass selector: aSymbol
 	| method |
 	method := aClass lookupSelector: aSymbol.
 
-	^self spawnBrowser: ClyFullBrowser withState: [:browser |
+	^self spawnBrowser: ClyFullBrowserMorph withState: [:browser |
 		browser selectMethod: method]

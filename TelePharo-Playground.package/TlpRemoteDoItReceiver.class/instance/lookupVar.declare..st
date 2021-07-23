@@ -1,3 +1,3 @@
-lookup
+private - backend access
 lookupVar: aString declare: aBoolean 
-	^self bindingOf: aString
+	^self lookupVar: aString
