@@ -1,0 +1,20 @@
+name: Unit Tests
+
+on: [push,pull_request,workflow_dispatch]
+
+jobs:
+   build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        smalltalk: [ Pharo64-10 ]
+    name: ${{ matrix.smalltalk }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-image: ${{ matrix.smalltalk }}
+      - run: smalltalkci -s ${{ matrix.smalltalk }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        timeout-minutes: 15
