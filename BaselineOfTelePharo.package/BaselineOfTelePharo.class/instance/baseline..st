@@ -29,7 +29,7 @@ baseline: spec
 			spec
 				baseline: 'StateSpecs'
 				with: [ spec
-						repository: 'github://dionisiydk/StateSpecs:v4.0.2';
+						repository: 'github://dionisiydk/StateSpecs:v5.0.2';
 						loads: #('StateSpecs-Specs' 'StateSpecs-DSL-ClassWords') ].
 			spec
 				for: #'pharo7.x'
