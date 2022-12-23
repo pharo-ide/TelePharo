@@ -1,5 +1,9 @@
 # TelePharo
-[![Build Status](https://travis-ci.org/pharo-ide/TelePharo.svg?branch=master)](https://travis-ci.org/pharo-ide/TelePharo)
+
+[![GitHub release](https://img.shields.io/github/release/pharo-ide/TelePharo.svg)](https://github.com/pharo-ide/TelePharo/releases/latest)
+[![Unit Tests](https://github.com/pharo-ide/TelePharo/actions/workflows/tests.yml/badge.svg)](https://github.com/pharo-ide/TelePharo/actions/workflows/tests.yml)
+
+[![Pharo 10](https://img.shields.io/badge/Pharo-10-informational)](https://pharo.org)
 
 Complete toolset for remote development of Pharo images. It includes:
 
